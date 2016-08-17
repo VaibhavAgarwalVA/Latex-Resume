@@ -1,3 +1,1 @@
-Latex Resume.
-
-Two-page version added.
+Added onepage and twopage resumes.
