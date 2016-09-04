@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper]{moderncv}
+\usepackage[margin=0.40in, top=0.2in,bottom=0.3in]{geometry}
+\usepackage{multicol}           %% allows to create more than two columns
+\usepackage{array}              %% for adjusting column widths in table
+\usepackage{color}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\setlength{\parindent}{0pt}	%% used for setting the no indentation at the beginning of paras
+
+\setlist{nosep}
+\pagenumbering{gobble}
+
+% modern themes
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\moderncvicons{awesome}
+\definecolor{titleblue}{RGB}{20,20,100}
+
+\newcommand{\experience}[4]{
+  \vspace{0.1cm}
+\item \textbf{\large{#1}} \textit{#2}\hfill\textit{#3}
+  \begin{itemize}[leftmargin=*]
+    \setlength\itemsep{0em} #4
+  \end{itemize}
+}
+
+\newcommand{\experiencetwo}[4]{
+  \vspace{0.1cm}
+\item \textbf{\large{#1}} \hfill\textit{#3}\\\textit{#2}
+  \begin{itemize}[leftmargin=*]
+    \setlength\itemsep{0em} #4
+  \end{itemize}
+}
+
+
+\newcommand{\education}[5]{
+\item[] \textbf{\large{#1 :}} #2 - \emph{#3: \textbf{#4}} \hfill\textit{#5}
+}
+
+
+\firstname{Vaibhav}
+\familyname{Agarwal}
+\address{Computer Science and Engineering}{IIT Kharagpur} 
+\email{vaiagarwal96@gmail.com}
+\extrainfo{vaiagarwal96@iitkgp.ac.in}
+\extrainfo{\emailsymbol\emaillink{vaiagarwal96@iitkgp.ac.in}}
+\social[github]{VaibhavAgarwalVA}
+\social[linkedin]{VaibhavAgarwalVA}
+\homepage{http://cse.iitkgp.ac.in/~vaibhavagarwal/}
+\begin{document}
+\maketitle
+\vspace{-1cm}
+
+\section*{THIS DOCUMENT}
+\begin{itemize}
+\setlength\itemsep{0.5em}
+\item This is a dummy resume doc. Mail me for a FULL COPY of my resume.
+\end{itemize}
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "twopage"
+%%% End:
